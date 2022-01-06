@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400&display=swap');
+
+:root {
+    /* COLORS */
+    /* primary */
+    --primary1: hsl(215, 51%, 70%);            /* soft blue*/
+    --primary2: hsl(178, 100%, 50%);           /* cyan*/
+
+    /* neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    
+    font-family: 'Outfit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 14rem;
+}
+
+.img {
+    /* width: 280px;
+    height: 280px; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./images/image-equilibrium.jpg); 
+    background-position: center;   
+    display: block;
+    margin: 0 auto;
+    padding: 6rem;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    color: var(--white);
+    margin-top: 0.8rem;
+}
+
+.card-title:hover {
+    color: var(--primary2);
+    cursor: pointer;
+}
+
+.description {
+    font-size: 0.75rem;
+    font-weight: 300;
+    
+    color: var(--primary1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left-stat {
+    color: var(--primary2);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.lft-ico {
+    background-image: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0.4rem;
+    
+}
+
+.right-stat {
+    color: var(--primary1);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 5.5px;
+}
+
+.rgt-ico {
+    background-image: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0.4rem;
+}
+
+.line {
+    background-color: var(--line);
+    height: 1.5px;
+    width: 100%;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.card-footer p {
+    color: var(--primary1);
+    font-size: 0.7rem;
+    display: inline-block;
+}
+
+.foot-img {
+    background-image: url(./images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 11px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.card-footer p span {
+    color: var(--white);
+}
+
+.card-footer p span:hover {
+    color: var(--primary2);
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    background: darkcyan;
+    width: 100vw;
+    height: 1.5em;
+}
+
